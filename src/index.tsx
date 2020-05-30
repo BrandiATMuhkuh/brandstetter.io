@@ -20,14 +20,19 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
-
-ReactDOM.render(
-  <React.StrictMode>
+// https://github.com/stereobooster/react-snap
+const rootElement = document.getElementById("root");
+if (rootElement?.hasChildNodes()) {
+  ReactDOM.hydrate(<React.StrictMode>
     <CssBaseline />
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+  </React.StrictMode>, rootElement);
+} else {
+  ReactDOM.render(<React.StrictMode>
+    <CssBaseline />
+    <App />
+  </React.StrictMode>, rootElement);
+}
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

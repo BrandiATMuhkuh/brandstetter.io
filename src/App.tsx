@@ -31,6 +31,9 @@ function Header() {
 
 function App() {
 
+  // const [value, loading] = useDocumentData<{ title: string; content: string;  }>(
+  //   firebase.firestore().collection("pages").doc("contact")
+  // );
 
   return (
     <>
@@ -66,8 +69,6 @@ function Blogs() {
     firebase.firestore().collection("blog").doc(blogId)
   );
 
-
-  console.log("match", match);
   return <>
     Title: {value?.title} <br />
     Content: {value?.content}
