@@ -3,6 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import firebase from "firebase/app";
+import "firebase/firestore";
+
+// init firebase
+const firebaseConfig = {
+  apiKey: "AIzaSyB4ssTvUf3nZOZEIBkOuKIoqfVCNkizK-I",
+  authDomain: "brandstetter-io.firebaseapp.com",
+  databaseURL: "https://brandstetter-io.firebaseio.com",
+  projectId: "brandstetter-io",
+  storageBucket: "brandstetter-io.appspot.com",
+  messagingSenderId: "649829676737",
+  measurementId: "G-XNZZ6YQDR4",
+};
+
+firebase.initializeApp(firebaseConfig);
+
 
 ReactDOM.render(
   <React.StrictMode>
