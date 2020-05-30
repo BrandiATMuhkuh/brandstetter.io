@@ -12,11 +12,13 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "@types/react-router-dom": "^5.1.5",
     "firebase": "latest",
     "firebase-tools": "latest",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-firebase-hooks": "latest",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "typeface-roboto": "0.0.75",
     "typescript": "~3.7.2"

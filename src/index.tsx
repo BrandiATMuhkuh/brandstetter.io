@@ -5,6 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import firebase from "firebase/app";
 import "firebase/firestore";
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 // init firebase
 const firebaseConfig = {
@@ -22,6 +23,7 @@ firebase.initializeApp(firebaseConfig);
 
 ReactDOM.render(
   <React.StrictMode>
+    <CssBaseline />
     <App />
   </React.StrictMode>,
   document.getElementById('root')
